@@ -30,7 +30,7 @@ label {display: block; font-size: 1.2rem;}
 #send {
     justify-content: center;
   
-  font-family: Cooper Black, 'Arial Rounded MT Bold', sans-serif;
+  font-family: 'Caprasimo', 'Arial Rounded MT Bold', sans-serif;
   font-size: 1rem;
   background-color: #784415;
   color: white;
@@ -84,7 +84,7 @@ label {display: block; font-size: 1.2rem;}
   align-content: center;
   align-items: center;
   margin-top: 2rem;
-  font-family: 'Cooper Black';
+  font-family: 'Caprasimo', 'Arial Rounded MT Bold', sans-serif;
   font-size: 1.5rem;
   flex-direction: row;
   gap: 2rem;

@@ -15,7 +15,7 @@ const ComponentOne: React.FC<{ onSwap: () => void }> = ({ onSwap }) => (
         style={{
           fontSize: "3rem",
           color: "#CC5500",
-          fontFamily: "Cooper Black",
+          fontFamily: 'Caprasimo',
         }}
       >
         Let's Chat!
@@ -51,7 +51,7 @@ const ComponentTwo: React.FC<{ onSwap: () => void }> = ({ onSwap }) => (
         style={{
           fontSize: "3rem",
           color: "#CC5500",
-          fontFamily: "Cooper Black",
+          fontFamily: 'Caprasimo',
         }}
       >
         Let's Chat!
