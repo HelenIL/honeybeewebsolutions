@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import Process from "../components/contact/process";
 import ContactForm from "../components/contact/contactForm";
 import "./index.css";
-import { LocalDining } from "@mui/icons-material";
 
 const CONTACT = process.env.PUBLIC_URL + "/images/contact.png";
 const BACK = process.env.PUBLIC_URL + "/images/back.png";
@@ -84,12 +83,11 @@ const ComponentTwo: React.FC<{ onSwap: () => void }> = ({ onSwap }) => (
 const Contact = () => {
   // Use state to track which component to show (true for A, false for B)
   const [showA, setShowA] = useState(true); // Initial state shows Component A
-  const [loading, setLoading] = useState(false);
   // Function to toggle the state value
   const toggleComponent = () => {
-    setLoading(true);
+
     setShowA(!showA);
-    setLoading(false);
+   
   };
 
   return (

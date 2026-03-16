@@ -1,7 +1,6 @@
-import React from "react";
 import "./contact.css"
 
-const BACK = process.env.PUBLIC_URL + "/images/back.png";
+
 const PHONE = process.env.PUBLIC_URL + "/images/hb_phone.png";
 
 const ContactForm = () => {

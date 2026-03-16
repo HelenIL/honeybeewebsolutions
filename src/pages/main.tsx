@@ -1,5 +1,4 @@
 import Home from "./home";
-import Process from "../components/contact/process";
 import Services from "./services";
 import Contact from "./contact";
 
