@@ -26,7 +26,11 @@
   text-align: center;
   width: 38rem;
 }
-
+.home-p {
+  font-family: 'Caprasimo', 'Arial Rounded MT Bold', sans-serif;
+  color: #CC5500;
+  font-size: 1.5rem;
+}
 /* Services Section */
 .services-wrapper {
   font-family: 'Caprasimo', 'Arial Rounded MT Bold', sans-serif;
@@ -83,6 +87,10 @@
   text-align: center;
   transition: transform 0.6s;
   transform-style: preserve-3d;
+}
+
+.flip-card-p {
+  font-size: .75rem
 }
 
 .flip-card:hover .flip-card-inner {
@@ -213,6 +221,10 @@
   margin-top: 12px;
   border-radius: 20px;
 }
+
+.flip-card-p {
+  font-size: .6rem;
+}
 }
 
 @media only screen and (max-width: 375px) {
@@ -234,6 +246,9 @@
   height: 175px;
   margin-top: 12px;
   border-radius: 20px;
+}
+.flip-card-back {
+  font-size: .2rem;
 }
 }
 

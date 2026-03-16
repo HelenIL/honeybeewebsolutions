@@ -3,12 +3,19 @@
     width: 100%;
     height: 4rem;
     border-bottom: 8px solid #784415;
-}
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: flex-start;
+    
+}   
 
 .header-p {
 font-family: 'Caprasimo', 'Arial Rounded MT Bold', sans-serif;
 color: white;
 text-align: left;
+align-items: center;
+align-content: center;
 margin: 0;
 line-height: 4rem;
 padding-left: 1rem;

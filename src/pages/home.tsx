@@ -1,4 +1,4 @@
-import HB from '../assets/portfolio_logo_notxt_small.png'
+import HB from '../assets/portfolio_logo_notxt_small_bee.png'
 import './index.css'
 
 
