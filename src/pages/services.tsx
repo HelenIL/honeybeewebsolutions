@@ -1,12 +1,12 @@
 import DEV from "../assets/code_color_edit_notxt.png";
 import FIX from "../assets/fix_color_edit_notxt.png";
 import BRAND from "../assets/branding_color_notxt.png";
-import './test.css'
+import './pages.css'
 
 
 
 
-export default function ServicesTest() {
+export default function Services() {
 
 
 

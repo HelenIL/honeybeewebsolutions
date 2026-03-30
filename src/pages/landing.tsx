@@ -1,9 +1,9 @@
 import HB from '../assets/portfolio_logo_notxt_small_bee.png'
-import './test.css'
+import './pages.css'
 
 
 
-export default function LandingTest() {
+export default function Landing() {
 
 
 

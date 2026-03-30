@@ -1,4 +1,4 @@
-import './test.css'
+import './pages.css'
 import { useState } from 'react';
 
 
