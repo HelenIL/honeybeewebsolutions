@@ -1,7 +1,8 @@
 import "./contact.css"
-
+import SEND from '../../assets/send.png'
 
 const PHONE = process.env.PUBLIC_URL + "/images/hb_phone.png";
+
 
 const ContactForm = () => {
   return (
@@ -9,7 +10,7 @@ const ContactForm = () => {
       <div
       className="contact"
         style={{
-      
+     
         }}
       >
         <div style={{}}>
@@ -20,13 +21,13 @@ const ContactForm = () => {
           style={{
            
            
-          
+         
             height: '25rem'
           }}
           
           className="retro-card"
         >
-          <div className=""> 
+          {/* <div className="">  */}
           <form
             id="form"
             action="https://formsubmit.co/directconnect@honeybeewebsolutions.com"
@@ -39,13 +40,20 @@ const ContactForm = () => {
             <input id="input" type="email" name="email" required />
             <label htmlFor="message">Message:</label>
             <textarea id="textarea" name="message" required></textarea>
-            <div style={{ display: "flex", justifyContent: "center" }}>
-              <button id="send" type="submit">
-                Send
+            <div style={{  paddingTop: '22px'  }}>
+            
+              <button id="send" type="submit" className="contact-button" style={{}}>
+                <img
+          loading="lazy"
+          className="contact-button-image"
+          style={{}}
+          src={SEND}
+          alt="Contact"
+        />
               </button>
             </div>
           </form>
-          </div>
+          {/* </div> */}
         </div>
       </div>
     </div>

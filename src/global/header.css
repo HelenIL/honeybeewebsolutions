@@ -1,0 +1,138 @@
+.header-wrapper {
+    /* background-color: #CC5500; */
+    width: 100%;
+    height: auto;
+    /* border-bottom: 8px solid #784415; */
+    align-items: center;
+    align-content: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: #c87042;
+  /* border-top: 5px solid black;
+  border-bottom: 5px solid black; */
+    /* justify-content: flex-start; */
+    
+}   
+
+.header-p {
+font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+color: white;
+text-align: left;
+align-items: center;
+align-content: center;
+margin: 0;
+line-height: 4rem;
+padding-left: 1rem;
+font-size: 2rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  /* padding: 10px 20px; */
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  display: flex;
+  gap: 10px;
+}
+
+.logo {
+    height: 40px;
+    border-radius: 30%;
+    display: block;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex; /* Display as a row on large screens */
+  margin: 10;
+  padding: 0;
+}
+
+.navbar-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  display: block;
+}
+
+.menu-toggle {
+  display: none; /* Hide hamburger on large screens */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+
+@media only screen and (max-width: 1275px) {
+.header-p {
+   font-size: 1.5rem;
+}
+}
+
+@media only screen and (max-width: 768px) {
+.navbar-links {
+    display: none; 
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 50px; 
+    left: 0;
+    background-color: #444;
+  }
+
+  .logo {
+    height: 30px;
+  }
+
+  .navbar-links.show {
+    display: flex; 
+  }
+  
+  .navbar-links li a {
+      padding: 15px;
+      text-align: center;
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+
+}
+
+
+
+@media only screen and (max-width: 650px) {
+/* .header-p {
+   font-size: 1.2rem;
+} */
+}
+
+@media only screen and (max-width: 430px) {
+.br {
+    display: none;
+}
+.navbar-links {
+    top: 35px;
+}
+}
+
+@media only screen and (max-width: 390px) {
+/* .navbar-links {
+    top: 35px;
+} */
+}
+
+
+@media only screen and (max-width: 375px) {
+.navbar-links {
+    top: 26px;
+}
+}

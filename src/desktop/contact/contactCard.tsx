@@ -1,8 +1,9 @@
 import "./contact.css";
 
 const HB = process.env.PUBLIC_URL + "/images/hb_logo_coffee.jpg";
+const CONTACT = process.env.PUBLIC_URL + "/images/contact.png";
 
-export default function Process() {
+export default function ContactCard() {
   return (
     <div className="processContainer" style={{}}>
       <div className="process" style={{}}>
@@ -25,8 +26,16 @@ export default function Process() {
                 Get in touch today to schedule your free consultation!
               </strong>
             </p>
-            <br />
             
+            <button className="contact-button"  style={{}}>
+        <img
+          loading="lazy"
+          className="contact-button-image"
+          style={{}}
+          src={CONTACT}
+          alt="Contact"
+        />
+      </button>
          
         </div>
         </div>
