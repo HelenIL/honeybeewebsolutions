@@ -1,5 +1,5 @@
 import HB from '../assets/portfolio_logo_notxt_small_bee.png'
-import './pages.css'
+import './landing.css'
 
 
 
@@ -11,10 +11,13 @@ export default function Landing() {
     return (
 
 
-        <div className="test-wrapper" style={{}}>
-            <div className="text-div">
-                <h2>Websites That Help Small Businesses Grow</h2>
-                <br />
+        <div className="landing-wrapper" style={{}}>
+            <div className="landing-text-wrapper">
+                <div className="landing-header-text">
+                <p>Websites That Help Small Businesses Grow</p>
+                </div>
+          
+                <div className="landing-body-text">
     <p>Your website should do more than just exist–it should be an extension of you. 
         <p>That’s where I come in.</p> 
         I’m Helen, the force behind Honeybee Web Solutions.
@@ -24,11 +27,17 @@ Based in Saint Paul, Minnesota, I specialize in helping small business owners bu
  
  <p>With Honeybee, you’re not just hiring a developer–you’re getting a partner invested in your success. 
     <p></p></p>
+    </div>
  <br />
- <h3>Build your brand. Grow your business. Stand out.</h3>
+ <div className="landing-tag-lg"><p>Build your brand. Grow your business. Stand out.</p></div>
+ <div className="landing-tag-sm">
+    <p>Build your brand.</p>
+    <p>Grow your business.</p>
+    <p>Stand out.</p>
+ </div>
             </div>
-            <div className="image-div">
-<img className="logo-image" src={HB} style={{ }} alt="HB Logo"  />
+            <div className="landing-image-wrapper">
+<img className="landing-image" src={HB} style={{ }} alt="HB Logo"  />
             </div>
 
 

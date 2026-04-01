@@ -1,5 +1,5 @@
 body {
-  min-height: 100vh;
+  /* min-height: 100dvh; */
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 
@@ -13,6 +13,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+  
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
 }
 
 .divide {
@@ -38,32 +53,10 @@ code {
   margin-top: 50px; */
 }
 
-h2, h3, h1{
+h2, h3, h1, h4{
     font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
 }
 
-.retro-card {
-  
-  background-color: #CC5500;
-  border: 8px solid #784415; 
-  border-radius: 30px;
-  width: 40rem;
-  height: auto;
-  padding: 20px;
-  box-shadow: 10px 10px 0px #8b5a2b;
-  color: #5d3a1a;
-  transition: transform 0.2s;
-  align-items: center;
-  align-content: center;
-}
-
-
-.card-content {
-  background-color: #ffdf91; 
-  padding: 15px;
-  border-radius: 30px;
-  text-align: center;
-}
 
 
 @media only screen and (max-width: 1280px){

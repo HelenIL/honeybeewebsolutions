@@ -33,7 +33,7 @@ const Card = (props: any) => {
               you succeed online.
             </p>
             <br />
-            <p className="contact-p-main" style={{  }}>
+            <p className="contact-p-main btm" style={{  }}>
               <strong>
                 Get in touch today to schedule your free consultation!
               </strong>

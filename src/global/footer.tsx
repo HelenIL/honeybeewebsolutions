@@ -9,8 +9,8 @@ export default function Footer() {
 
     return (
 
-        <div className="footer-wrapper">
-            <p>©2026 honeybeewebsolutions.com | All rights reserved</p>
+        <div className="footer-wrapper" style={{}}>
+            <p className="footer-p">©2026 honeybeewebsolutions.com | All rights reserved</p>
         </div>
     )
 }

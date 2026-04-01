@@ -8,9 +8,9 @@ export default function Main() {
       <div
         className=""
         style={{
-          minHeight: "100vh",
-          alignItems: "center",
-          alignContent: "center",
+          display: 'flex',
+          justifyContent: 'center',
+      
         }}
       >
         <Landing />
