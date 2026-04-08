@@ -1,74 +1,75 @@
-import './pages.css'
-import { useState } from 'react';
-
-
+import { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Card from "react-bootstrap/Card";
+import "./contact.css";
 
 const BACK = process.env.PUBLIC_URL + "/images/back.png";
 const HB = process.env.PUBLIC_URL + "/images/hb_logo_coffee.jpg";
 const CONTACT = process.env.PUBLIC_URL + "/images/contact.png";
 const PHONE = process.env.PUBLIC_URL + "/images/hb_phone.png";
 
-const Card = (props: any) => {
-    return (
-        <div className="contact-card-wrapper">
-            <div className="contact-inner-wrapper" style={{}}>
-            <div className="contact-image-div">
-                <img className="contact-image" src={HB}></img>
-            </div>
+const CardOne = (props: any) => {
+  return (
+    <div className="contact-card-wrapper" style={{}}>
+      <Card className="contact-image-div" style={{}}>
+        <Card.Img src={HB} />
+      </Card>
+      <Card className="contact-text-div" style={{}}>
+        <Card.Text className="contact-title" style={{}}>
+          Let's Chat!
+        </Card.Text>
 
-
-            <div className="contact-div" style={{}}>
-               
-                    
-                    
-                 
-                        <div className="contact-text" style={{ }}>
-                            <p className="title">Let's Chat!</p>
-                          
-                        <p className="contact-p-main" style={{  }}>
-              I start every project with a conversation. I want to understand
-              your business, your goals, and your vision for your website. This
-              is a chance for us to get to know each other and make sure we're a
-              good fit. No pressure, just a friendly chat about how I can help
-              you succeed online.
-            </p>
-            <br />
-            <p className="contact-p-main btm" style={{  }}>
-              <strong>
-                Get in touch today to schedule your free consultation!
-              </strong>
-            </p>
-            <div style={{}}>
-                        <button id="cb" onClick={props.onClick}>Contact</button>
-                    </div>
-            </div>
-            </div>
-                    </div>
-                   
-                </div>
-     
-    )
-}
+        <Card.Body className="contact-body" style={{}}>
+          <Card.Text className="contact-card-text" style={{}}>
+            I start every project with a conversation. I want to understand your
+            business, your goals, and your vision for your website. This is a
+            chance for us to get to know each other and make sure we're a good
+            fit. No pressure, just a friendly chat about how I can help you
+            succeed online.
+          </Card.Text>
+          <br />
+          <br />
+          {/* <br /> */}
+          <Card.Text className="contact-title-bottom" style={{}}>
+            Get in touch today to schedule your free consultation!
+          </Card.Text>
+          {/* <br/>
+        <br/> */}
+          <div className="button-div" style={{}}>
+            <Button
+              id="contact-button"
+              size="lg"
+              onClick={props.onClick}
+              style={{}}
+            >
+              Contact
+            </Button>
+          </div>
+        </Card.Body>
+      </Card>
+    </div>
+  );
+};
 
 const Form = () => {
-    return (
-         <div className="form-wrapper">
-            <div className="form-inner-wrapper">
-                <div className="contact-image-div">
-                <img className="contact-image" src={PHONE}></img>
-            </div>
-            <div className="form-div">
-                
-                <div className="form-text textTwo">
-               
-                <form
+  return (
+    <div className="contact-card-wrapper" style={{}}>
+      <Card className="contact-image-div  " style={{}}>
+        <Card.Img src={PHONE} />
+      </Card>
+      <Card className="contact-text-div " style={{}}>
+        <Card.Text className="contact-title" style={{}}>
+          Let's Chat!
+        </Card.Text>
+
+        <Card.Body className="contact-body" style={{}}>
+          <form
             id="form"
             action="https://formsubmit.co/directconnect@honeybeewebsolutions.com"
             method="POST"
           >
-           
-            <br/>
-            <br/>
+            <br />
+            <br />
             <input type="hidden" name="_captcha" value="false"></input>
             <label htmlFor="name">Name:</label>
             <input id="input" type="text" name="name" required />
@@ -76,41 +77,38 @@ const Form = () => {
             <input id="input" type="email" name="email" required />
             <label htmlFor="message">Message:</label>
             <textarea id="textarea" name="message" required></textarea>
-            <br/>
-            <div style={{  marginTop: '100px'  }}>
-            
-              <button id="send" type="submit" className="contact-button" style={{}}>
-         
-        Send
-              </button>
+            {/* <br/> */}
+            <div className="button-div send" style={{}}>
+              <Button
+                size="lg"
+                id="contact-button"
+                type="submit"
+                
+                // className="contact-button"
+                style={{}}
+              >
+                Send
+              </Button>
             </div>
           </form>
-          </div>
-            </div>
-            </div>
-               
-            </div>
-    )
-}
+        </Card.Body>
+      </Card>
+    </div>
+  );
+};
 
 export default function ContactTest() {
-   
-    const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
- const handleButtonClick = () => {
+  const handleButtonClick = () => {
     setIsVisible(true);
   };
 
-    return (
-
-        <div className="contact-wrapper">
-
-            <div>
-                {isVisible ? (
-                    <Form/>
-                ) : ( <Card onClick={handleButtonClick}/>)}
-            </div>
-
-        </div>
-    )
+  return (
+    <div className="contact-wrapper">
+      <div>
+        {isVisible ? <Form /> : <CardOne onClick={handleButtonClick} />}
+      </div>
+    </div>
+  );
 }

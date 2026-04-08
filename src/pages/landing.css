@@ -4,53 +4,86 @@
 .landing-wrapper {
        display: flex;
     justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    
     align-items: center;
-    /* border: 2px solid red; */
-    /* margin-top: 3rem;
-    margin-bottom: 3rem; */
+   
     gap: 20px;
-    flex-direction: row;
-    margin-top: 150px;
+    
+    margin-top: 50px;
     margin-bottom: 150px;
 }
 
-.landing-text-wrapper {
+.header-p {
+    font-size: 5rem;
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+}
+.subheader-p {
+    font-size: 2rem;
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+}
+
+.landing-card-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+    
+}
+
+.landing-img-card {
     width: 45rem;
-    font-size: 1.3rem;
+    border: none;
+    background-color: rgb(255, 224, 145, .25);
+   
+   border-radius: 50px;
+   box-shadow: -10px  10px  0px #c87042;
+}
+
+.landing-img {
+    width: 100%;
+    border-radius: 50px;
+}
+.landing-card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.landing-text-card {
+    width: 45rem;
+    height: 686px;
+    
+    border: none;
     border-radius: 50px;
     text-align: center;
     padding: 15px;
-    align-content: center;
-    box-shadow: -10px  10px  0px #c87042;
-    border: 10px solid rgb(255, 224, 145, .25);
-    background-color: white;
-}
 
-.landing-header-text {
-    font-size: 2rem;
-    font-weight: bold;
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
-}
-
-.landing-tag-lg {
-    font-weight: bold;
-    font-size: 1.5rem;
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
-}
-
-.landing-image-wrapper {
-    padding: 10px;
-   background-color: rgb(255, 224, 145, .25);
+    
    
    border-radius: 50px;
    box-shadow: 10px  -10px  0px #c87042;
 }
 
-.landing-image {
-     width: 45rem;
-    border-radius: 50px;
+.landing-body-text {
+    display: flex;
+    font-size: 1.25rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
 }
+
+.landing-tag-lg {
+    font-weight: bold;
+    font-size: 3rem;
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+}
+
+
 
 .landing-tag-sm {
     display: none;
@@ -60,20 +93,30 @@
 
 /* Media Query for small screens (e.g., max-width: 768px) */
 @media only screen and (max-width: 1500px){
-   .landing-wrapper {
+   .landing-card-wrapper {
         flex-direction: column;
-
-        /* align-items: flex-start;
-          margin-top: 0px;
-    margin-bottom: 0px; */
+    gap: 40px;
+  
         
     }
-    .landing-image-wrapper {
+    .landing-img-card {
     order: -1;
 }
 
+.landing-img-card, .landing-text-card {
+    width: 90%;
+
 }
 
+.landing-text-card {
+    height: auto;
+    margin-top: 20px;
+}
+
+.landing-body-text {
+    margin-top: 20px;
+}
+}
 
 @media only screen and (max-width: 1380px){
 
@@ -104,109 +147,185 @@
 
 @media only screen and (max-width: 1024px) {
 
+.landing-body-text {
+    font-size: 2rem;
+   
+}
 
-
-
+.landing-tag-lg {
+    
+    font-size: 2.25rem;
+    
+}
 
 }
 
 @media only screen and (max-width: 915px) {
 
-
- 
+.header-p {
+    font-size: 4.5rem;
+    
+}
+ .landing-body-text {
+    font-size: 2rem;
+   
+}
 
 
 }
 
+@media only screen and (max-width: 853px) {
+
+
+}
+
+@media only screen and (max-width: 776px) {
+
+.header-p {
+    font-size: 4rem;
+    
+}
+
+}
 
 @media only screen and (max-width: 768px) {
 
-    .landing-wrapper {
-   margin-top: 50px;
-    }
 
-
-   .landing-image-wrapper, .landing-text-wrapper, .landing-wrapper {
-        width: 90%;
-    }
-
-.landing-image {
-    width: 100%;
-}
 
 }
 
 
 @media only screen and (max-width: 690px) {
-
+.header-p {
+    font-size: 3.75rem;
+    
+}
 
 }
 
-@media only screen and (max-width: 660px) {
+@media only screen and (max-width: 645px) {
 
-
+.header-p {
+    font-size: 3.5rem;
+    
 }
-
-@media only screen and (max-width: 624px) {
 .landing-tag-lg {
     display: none;
 }
 .landing-tag-sm {
     display: inline-block;
     font-weight: bold;
+    font-size: 2.75rem;
+    text-align: center;
     font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
 }
-
 }
 
-@media only screen and (max-width:540px) {
-
-        /* .logo-image, .image-div, .text-div {
-        width: 25rem;
-    } */
-
+@media only screen and (max-width: 624px) {
 
 
 }
 
-@media only screen and (max-width: 475px) {
-           /* .logo-image, .image-div, .text-div {
-        width: 20rem;
-    } */
+@media only screen and (max-width: 604px) {
 
+.header-p {
+    font-size: 3.25rem;
+    
+}
+.subheader-p {
+    font-size: 1.9rem;
+}
+}
+
+@media only screen and (max-width:567px) {
+.header-p {
+    font-size: 3rem;
+    
+}
+.subheader-p {
+    font-size: 1.8rem;
+}
+
+}
+
+@media only screen and (max-width:548px) {
+
+.header-p {
+    font-size: 2.9rem;
+    
+}
+.subheader-p {
+    font-size: 1.5rem;
+}
+.landing-body-text {
+    font-size: 1.25rem;
+   
+}
+/* .landing-tag-sm {
+    font-size: 1.5rem;     
+} */
+}
+
+@media only screen and (max-width: 497px) {
+
+.header-p {
+    font-size: 2.5rem;
+    
+}
 
 
 }
 
-@media only screen and (max-width: 430px) {
-         /* .logo-image, .image-div, .text-div {
-        width: 19rem;
-    } */
-
+@media only screen and (max-width: 440px) {
+  
+     .header-p {
+    font-size: 2.25rem;
+    
+}
+.subheader-p {
+    font-size: 1.25rem;
+}
+.landing-tag-sm {
+    font-size: 1.75rem;     
+}
 }
 @media only screen and (max-width: 390px) {
-       /* .logo-image, .image-div, .text-div {
-        width: 18rem;
-    } */
-
+  
 
 
 }
 
 
 @media only screen and (max-width: 375px) {
-       /* .logo-image, .image-div, .text-div {
-        width: 16rem;
-    } */
 
+     .header-p {
+    font-size: 2rem;
+    
+}
+
+.subheader-p {
+    font-size: 1rem;
+}
+
+.landing-tag-sm {
+    font-size: 2rem;     
+}
 
 }
 
-@media only screen and (max-width: 360px) {
-     /* .landing-image, .landing-image-wrapper, .landing-text-wrapper {
-        width: 15rem;
-    } */
-
+@media only screen and (max-width: 344px) {
+ 
+     .header-p {
+    font-size: 1.8rem;
+    
+}
+.landing-body-text {
+    font-size: 1rem;
+   
+}
+.landing-tag-sm {
+    font-size: 1.75rem;     
+}
 
 
 }

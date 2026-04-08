@@ -1,35 +1,40 @@
-import "./header.css";
+
 import BEE from "../assets/bee8.png";
-import { useState } from 'react';
+
+import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
+
 
 
 export default function Header() {
-  const [isOpen, setIsOpen] = useState(false);
-    const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+
   return (
-    <div className="" style={{}}>
-   
-      <nav className="navbar">
-      <div className="navbar-logo">
-        <a href="/" className="header-p" style={{textDecoration: 'none'}}>
-      <img className="logo" style={{}} src={BEE} alt="Honeybee Logo" />
-      </a>
-        <a href="/" className="header-p br" style={{textDecoration: 'none'}}>Honeybee Web Solutions</a></div>
-   
-      <button className="menu-toggle" onClick={toggleMenu}>
-      
-        ☰
-      </button>
-      
-  
-      <ul className={`navbar-links ${isOpen ? 'show' : ''}`}>
-        <li><a className="header-p" href="/services">Services</a></li>
+    <>
+      <Navbar collapseOnSelect expand="lg" bg="dark" data-bs-theme="dark" className="bg-body-tertiary" style={{ paddingRight: '2rem', paddingLeft: '2rem'}}>
         
-        <li><a className="header-p" href="/contact">Contact</a></li>
-      </ul>
-    </nav>
-    </div>
+          <Navbar.Brand href="/">
+            <img
+              src={BEE}
+              width="30"
+              height="30"
+              className="d-inline-block align-top"
+              alt="Honeybee Logo"
+              style={{ borderRadius: '50%' }}
+            />
+            {' '}
+            <span className="d-none d-sm-inline ms-2">Honeybee Web Solutions</span>
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+          <Nav className="ms-auto" style={{textAlign: 'right', paddingTop: '1rem'}}>
+            <Nav.Link href="/services">Services</Nav.Link>
+            <Nav.Link href="/contact">Contact</Nav.Link>
+            
+          </Nav>
+          </Navbar.Collapse>
+       
+      </Navbar>
+      
+    </>
   );
 }

@@ -1,0 +1,290 @@
+.contact-wrapper {
+     display: flex;
+    justify-content: center;
+  
+   
+    min-height: 100vh;
+   
+    align-content: center;
+    align-items: center;
+   
+    
+}
+.contact-card-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+ 
+    gap: 2rem;
+}
+.contact-card-wrapper .contact-image-div {
+
+   border: 10px solid rgb(255, 224, 145, .25);
+   width: 45rem;
+   border-radius: 30px;
+   box-shadow: -10px  10px  0px #c87042;
+   
+}
+
+.contact-card-wrapper .contact-text-div {
+ 
+    width: 45rem;
+    text-align: center;
+    box-shadow: 10px  -10px  0px #c87042;
+    border: 10px solid rgb(255, 224, 145, .25);
+
+   
+}
+.contact-title {
+    font-size: 3rem;
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    margin-top: 2rem;
+  
+}
+
+.contact-body {
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contact-card-text {
+    align-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+.contact-title-bottom {
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#contact-button {
+    background-color: #c87042 !important;
+    border: none;
+    color: white;
+    border-radius: 50px;
+   
+   
+}
+
+
+form {
+    text-align: center;
+  
+     border-radius: 50px;
+
+     padding: 10px;
+     height: 100%;
+}
+
+
+
+input, textarea {
+    
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color: rgb(255, 224, 145, .25);
+}
+
+label {
+    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-size: 1.5rem;
+}
+
+
+/* Media Query for small screens (e.g., max-width: 768px) */
+@media only screen and (max-width: 1500px){
+
+    
+}
+
+
+@media only screen and (max-width: 1380px){
+
+
+.contact-wrapper {
+
+    margin-top: 2rem;
+
+    margin-bottom: 2rem;
+
+} 
+
+.contact-card-wrapper {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+
+}
+
+
+
+@media only screen and (max-width: 1280px){
+
+
+
+}
+@media only screen and (max-width: 1200px) {
+
+
+
+
+
+}
+
+@media only screen and (max-width: 1175px) {
+
+
+
+}
+
+
+
+@media only screen and (max-width: 1024px) {
+
+
+
+
+
+}
+
+@media only screen and (max-width: 915px) {
+
+
+
+
+}
+
+@media only screen and (max-width: 853px) {
+
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+   .contact-card-wrapper .contact-image-div  {
+        width: 90% ;
+       
+    }
+
+     .contact-card-wrapper .contact-text-div  {
+        width: 90%;
+    }
+
+}
+
+
+@media only screen and (max-width: 690px) {
+
+
+
+
+}
+
+@media only screen and (max-width: 660px) {
+
+
+
+}
+
+/* @media only screen and (max-width: 690px) {
+
+
+} */
+
+@media only screen and (max-width:540px) {
+
+    /* .contact-card-wrapper .contact-image-div  {
+        width: 25rem ;
+    }
+
+     .contact-card-wrapper .contact-text-div  {
+        width: 25rem;
+    } */
+.contact-card-text {
+    font-size: 1.2rem;
+}
+
+}
+
+@media only screen and (max-width: 475px) {
+   
+
+
+
+}
+
+@media only screen and (max-width: 430px) {
+   /* .contact-card-wrapper .contact-image-div  {
+        width: 22rem ;
+    }
+
+     .contact-card-wrapper .contact-text-div  {
+        width: 22rem;
+    } */
+
+   
+}
+@media only screen and (max-width: 390px) {
+
+
+
+}
+
+
+@media only screen and (max-width: 375px) {
+/*  
+    .contact-card-wrapper .contact-image-div  {
+        width: 20rem ;
+    }
+
+     .contact-card-wrapper .contact-text-div  {
+        width: 20rem;
+    } */
+.contact-title {
+    font-size: 2.5rem;
+}
+ .contact-title-bottom {
+    font-size: 1.2rem;
+ }
+
+.contact-wrapper {
+    margin-top : 3rem;
+    margin-bottom: 3rem;
+}
+}
+
+@media only screen and (max-width: 360px) {
+   /* .contact-card-wrapper .contact-image-div  {
+        width: 19rem ;
+    }
+
+     .contact-card-wrapper .contact-text-div  {
+        width: 19rem;
+    } */
+.contact-card-text {
+    font-size: 1rem;
+}
+}
