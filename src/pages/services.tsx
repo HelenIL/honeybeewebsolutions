@@ -14,8 +14,11 @@ export default function Services() {
 
         <div className="service-test-wrapper">
           
-            
-
+          <p className="service-header-p" style={{}}>Honeybee Web Solutions</p>
+         <p className="services-subheader">Services</p>
+        {/* <div className="contact-card-wrapper"></div> */}
+            {/* <div style={{width: '100%', height: '1px', backgroundColor: 'black', marginTop: '20px'}}></div> */}
+<div className="services-wrapper" style={{}}>
             <div className="dev">
               
                 
@@ -113,7 +116,7 @@ export default function Services() {
             </p>
                 </div>
             </div>
-           
+           </div>
 
         </div>
     )

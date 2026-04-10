@@ -1,43 +1,68 @@
 .contact-wrapper {
      display: flex;
     justify-content: center;
-  
-   
-    min-height: 100vh;
-   
-    align-content: center;
+    flex-direction: column;
+    
     align-items: center;
+   
+    gap: 20px;
+    
+    margin-top: 50px;
+    margin-bottom: 150px;
    
     
 }
-.contact-card-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
- 
-    gap: 2rem;
+.contact-header-p {
+     font-size: 5rem;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
 }
-.contact-card-wrapper .contact-image-div {
 
-   border: 10px solid rgb(255, 224, 145, .25);
-   width: 45rem;
-   border-radius: 30px;
+.contact-subheader {
+font-size: 3rem;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
+}
+.contact-card-wrapper {
+ display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    gap: 20px;
+}
+.contact-image-div {
+
+    width: 45rem;
+    border: none;
+    background-color: rgb(255, 224, 145, .25);
+   
+   border-radius: 50px;
    box-shadow: -10px  10px  0px #c87042;
    
 }
 
-.contact-card-wrapper .contact-text-div {
- 
-    width: 45rem;
+.contact-image {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.contact-text-div {
+        width: 45rem;
+    height: 686px;
+       border-radius: 50px;
+   box-shadow: 10px  -10px  0px #c87042;
+    border: none;
+    border-radius: 50px;
     text-align: center;
-    box-shadow: 10px  -10px  0px #c87042;
-    border: 10px solid rgb(255, 224, 145, .25);
+    padding: 15px;
 
    
 }
 .contact-title {
     font-size: 3rem;
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
     margin-top: 2rem;
   
 }
@@ -60,9 +85,9 @@
 }
 
 .contact-title-bottom {
-    font-size: 1.5rem;
     font-weight: bold;
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-size: 1.75rem;
+    font-family: 'High Tower Text', sans-serif;
 }
 
 .button-div {
@@ -106,8 +131,13 @@ input, textarea {
 }
 
 label {
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
     font-size: 1.5rem;
+}
+
+.button-div #send  {
+    margin-top: 10px;
 }
 
 

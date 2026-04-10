@@ -1,3 +1,12 @@
+@font-face {
+  font-family: 'High Tower Text'; /* The name you will use later */
+  src: url('fonts/HTOWERT.woff2') format('woff2'), /* Modern browser format */
+       url('fonts/HTOWERT.woff2') format('woff');  /* Fallback format */
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; /* Shows fallback font until custom font loads */
+}
+
 body {
  
   margin: 0;
@@ -33,7 +42,8 @@ html, body, #root {
 
 
 h2, h3, h1, h4{
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
 }
 
 

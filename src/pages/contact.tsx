@@ -10,14 +10,15 @@ const PHONE = process.env.PUBLIC_URL + "/images/hb_phone.png";
 
 const CardOne = (props: any) => {
   return (
-    <div className="contact-card-wrapper" style={{}}>
+    <div className="contact-wrapper" style={{}}>
+        <p className="contact-header-p" style={{}}>Honeybee Web Solutions</p>
+            <p className="contact-subheader">Let's Chat!</p>
+       <div className="contact-card-wrapper">
       <Card className="contact-image-div" style={{}}>
-        <Card.Img src={HB} />
+        <Card.Img className="contact-image" src={HB} />
       </Card>
       <Card className="contact-text-div" style={{}}>
-        <Card.Text className="contact-title" style={{}}>
-          Let's Chat!
-        </Card.Text>
+       
 
         <Card.Body className="contact-body" style={{}}>
           <Card.Text className="contact-card-text" style={{}}>
@@ -47,22 +48,25 @@ const CardOne = (props: any) => {
           </div>
         </Card.Body>
       </Card>
+      </div>
     </div>
   );
 };
 
 const Form = () => {
   return (
-    <div className="contact-card-wrapper" style={{}}>
+    <div className="contact-wrapper" style={{}}>
+        <p className="contact-header-p" style={{}}>Honeybee Web Solutions</p>
+         <p className="contact-subheader">Let's Chat!</p>
+        <div className="contact-card-wrapper">
       <Card className="contact-image-div  " style={{}}>
-        <Card.Img src={PHONE} />
+        <Card.Img className="contact-image" src={PHONE} />
       </Card>
       <Card className="contact-text-div " style={{}}>
-        <Card.Text className="contact-title" style={{}}>
-          Let's Chat!
-        </Card.Text>
+     
 
         <Card.Body className="contact-body" style={{}}>
+            <div>
           <form
             id="form"
             action="https://formsubmit.co/directconnect@honeybeewebsolutions.com"
@@ -91,8 +95,10 @@ const Form = () => {
               </Button>
             </div>
           </form>
+          </div>
         </Card.Body>
       </Card>
+      </div>
     </div>
   );
 };
@@ -105,7 +111,7 @@ export default function ContactTest() {
   };
 
   return (
-    <div className="contact-wrapper">
+    <div className="">
       <div>
         {isVisible ? <Form /> : <CardOne onClick={handleButtonClick} />}
       </div>

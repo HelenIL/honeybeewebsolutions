@@ -4,26 +4,55 @@
 .service-test-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
-    margin-bottom: 100px;
-    margin-top: 100px;
+   margin-top: 50px;
+    margin-bottom: 150px;
     
     
 }
 
-.title {
+.service-header-p {
+     font-size: 5rem;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
+}
+
+.services-subheader {
     font-size: 3rem;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
+}
+
+.services-wrapper {
+     display: flex;
+    justify-content:center;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 100px;
+    margin-top: 100px;
+}
+
+.title {
+    font-size: 4rem;
     align-content: center;
     font-weight: bold;
-    font-family: 'High Tower Text', 'Arial Rounded MT Bold', sans-serif;
+    font-family: 'High Tower Text', sans-serif;
+    font-weight: normal;
 }
 .dev {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     margin-bottom: 50px;
-  
+
    
+}
+hr {
+  border: none;
+  color: black;
+  height: 5px;
+  background-color: black;
 }
 
 .dev-text {
@@ -67,10 +96,10 @@
     border-radius: 50px;
 }
 
-.img, .image:hover {
+/* .img, .image:hover {
     transform: scale(1.1);
     box-shadow: -10px  10px  0px #c87042;
-}
+} */
 
 .fix {
     display: flex;
@@ -211,10 +240,21 @@
 
 }
 
+@media only screen and (max-width: 862px) {
+.service-header-p {
+     font-size: 4.5rem;
+
+}
+
+}
+
 
 @media only screen and (max-width: 768px) {
 
+    .service-header-p {
+     font-size: 3.5rem;
 
+}  
 
 }
 
@@ -246,7 +286,10 @@
         width: 25rem;
     }
 
+    .service-header-p {
+     font-size: 3rem;
 
+}  
 
 }
 
@@ -277,7 +320,14 @@
 button {
     padding: 10px;
 }
+    .service-header-p {
+     font-size: 2.25rem;
 
+}  
+.services-subheader {
+    font-size: 2.25rem;
+
+}
 
 }
 @media only screen and (max-width: 390px) {
@@ -293,13 +343,24 @@ label {
 
 
 @media only screen and (max-width: 375px) {
-       .logo-image, .image-div, .text-div {
+    .service-header-p {
+     font-size: 2rem;
+
+}   
+.services-subheader {
+    font-size: 2rem;
+
+}
+    
+    .logo-image, .image-div, .text-div {
         width: 16rem;
     }
 
 button {
     padding: 5px;
 }
+
+
 
 }
 
@@ -311,5 +372,8 @@ button {
       .dev-text, .branding-text {
         width: 15rem;
     }
+    .service-header-p {
+     font-size: 1.75rem;
 
+}  
 }
