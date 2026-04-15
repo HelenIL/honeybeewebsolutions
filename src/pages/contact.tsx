@@ -3,9 +3,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import "./contact.css";
 
-const BACK = process.env.PUBLIC_URL + "/images/back.png";
 const HB = process.env.PUBLIC_URL + "/images/hb_logo_coffee.jpg";
-const CONTACT = process.env.PUBLIC_URL + "/images/contact.png";
 const PHONE = process.env.PUBLIC_URL + "/images/hb_phone.png";
 
 const CardOne = (props: any) => {

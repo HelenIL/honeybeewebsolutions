@@ -24,7 +24,7 @@ export default function Services() {
                 
                 <div className="image-wrapper">
                      
-                    <img className="image" src={DEV}></img>
+                    <img className="image" alt="Computer Icon" src={DEV}></img>
                 </div>
                 <div className="title"><p>Web <br/>Design & <br/>Development</p></div>
                 
@@ -83,7 +83,7 @@ export default function Services() {
         <div className="title branding-title"><p>Branding &<br/>Logo<br/>Design</p></div>
             <div className="image-wrapper brand-img">
                      
-                    <img className="image " src={BRAND}></img>
+                    <img className="image " alt="Branding Icon" src={BRAND}></img>
                 </div>
                 
             </div>
@@ -91,7 +91,7 @@ export default function Services() {
               
                 <div className="image-wrapper">
                      
-                    <img className="image" src={FIX}></img>
+                    <img className="image" alt="Maintenance Icon" src={FIX}></img>
                 </div>
                 <div className="title"><p>Site<br/>Maintenance<br/>& Hosting</p></div>
               
